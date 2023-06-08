@@ -7,15 +7,15 @@ public class Main {
         int count = 0;
         boolean check = false;
 
-        for (double i: fractionalNums
-             ) {
+        for (double i : fractionalNums) {
             if (i < 0) {
-                check= true;
+                check = true;
             } else if (i > 0 && check) {
                 average += i;
                 count++;
+                System.out.println(i);
             }
         }
-        System.out.println(average/ count);
+        System.out.println(average / count);
     }
 }
